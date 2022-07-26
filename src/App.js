@@ -33,7 +33,7 @@ class App extends Component {
       if (location === undefined) {
         locationEvents = events.slice(0, eventCount);
       } else if (eventCount === undefined) {
-        location =
+        locationEvents =
           location === 'all' ? events : events.filter((event) => event.location === location);
       }
 

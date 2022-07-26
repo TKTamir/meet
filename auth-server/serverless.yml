@@ -1,8 +1,4 @@
-
-
 service: auth-server
-
-frameworkVersion: '3'
 
 provider:
   name: aws
@@ -20,4 +16,16 @@ functions:
     events:
       - http:
           path: api/get-auth-url
+          method: get
+  getAccessToken:
+    handler: handler.getAccessToken
+    events:
+      - http:
+          path: api/token/{code}
+          method: get
+  getCalendarEvents:
+    handler: handler.getCalendarEvents
+    events:
+      - http:
+          path: api/get-events/{access_token}
           method: get

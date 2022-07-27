@@ -128,6 +128,7 @@ input[type="number"] {
   grid-gap: 20px;
   padding: 20px;
   font-family: sans-serif;
+
 }
 
 .Alert {
@@ -217,6 +218,10 @@ input[type="number"] {
 
 .event-toggle-btn {
   background-color: #b4c3f1;
+  font-style: normal;
+  font-size: medium;
+  font-weight: 300;
+  border-radius: 97%;
 }
 
 /*Responsive web page settings*/
@@ -224,8 +229,12 @@ input[type="number"] {
   .event-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+
   }
 
+  .event {
+    text-align: center;
+  }
 }
 
 /* Responsive media query */

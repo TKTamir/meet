@@ -12,7 +12,10 @@ Then The user will be shown a list of cities as suggestions.
 
 Scenario: User can select a city from the suggested list.
 
-Given App has loaded and the search input box appears on the page.
-When User  clicks the empty input box.
-Then A dropdown list of recommended cities will appear below the input box.
+Given user was typing “Berlin” in the city textbox.
+And the list of suggested cities is showing
+When the user selects a city (e.g., “Berlin, Germany”) from the list.
+Then their city should be changed to that city (i.e., “Berlin, Germany").
+And the user should receive a list of upcoming events in that city
+
 

@@ -1,0 +1,20 @@
+{
+    "Ability": 0,
+    "Business Need": 0,
+    "Feature:": 0,
+    "Scenario:": 1,
+    "Background:": 1,
+    "Scenario Outline:": 1,
+    "Examples:": 2,
+    "Given": 2,
+    "When": 2,
+    "Then": 2,
+    "And": 2,
+    "But": 2,
+    "\\*": 2,
+    "\\|": 3,
+    "''": 3,
+    "#": "relative",
+    "@": "relative",
+}
+

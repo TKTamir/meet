@@ -31,7 +31,6 @@ class App extends Component {
         }
       });
     }
-
     if (!navigator.onLine) {
       this.setState({
         warningText:
@@ -67,7 +66,6 @@ class App extends Component {
   };
   render() {
     if (this.state.showWelcomeScreen === undefined) return <div className="App" />;
-
     return (
       <div className="App">
         <WarningAlert text={this.state.warningText} />

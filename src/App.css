@@ -87,6 +87,7 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
+  z-index: -1;
 }
 
 .details-btn {
@@ -122,6 +123,7 @@ input[type="number"] {
   width: 200px;
   margin: 20px auto;
   text-align: center;
+  z-index: -1;
 }
 
 .button-wrapper {
@@ -216,6 +218,7 @@ input[type="number"] {
   display: grid;
   -ms-grid-column: 1fr 1fr;
   grid-column: 1fr 1fr;
+  z-index: -1;
 }
 
 .event-toggle-btn {

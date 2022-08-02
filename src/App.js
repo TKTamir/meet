@@ -5,6 +5,7 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { extractLocations, getEvents } from './api';
+import { WarningAlert } from './Alert';
 
 class App extends Component {
   state = {
@@ -21,6 +22,17 @@ class App extends Component {
         this.setState({ events, locations: extractLocations(events) });
       }
     });
+
+    if (!navigator.onLine) {
+      this.setState({
+        warningText:
+          "It seems that you're not connected to the internet, your data was loaded from the cache",
+      });
+    } else {
+      this.setState({
+        warningText: '',
+      });
+    }
   }
 
   componentWillUnmount() {
@@ -47,6 +59,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <WarningAlert text={this.state.warningText} />
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
         <NumberOfEvents
           numberOfEvents={this.state.numberOfEvents}

@@ -31,6 +31,16 @@ class App extends Component {
         }
       });
     }
+    if (!navigator.onLine) {
+      this.setState({
+        warningText:
+          "It seems that you're not connected to the internet, your data was loaded from the cache.",
+      });
+    } else {
+      this.setState({
+        warningText: '',
+      });
+    }
   }
 
   componentWillUnmount() {
@@ -71,13 +81,6 @@ class App extends Component {
             getAccessToken();
           }}
         />
-        {!navigator.onLine && (
-          <WarningAlert
-            text={
-              "It seems that you're not connected to the internet, your data was loaded from the cache."
-            }
-          />
-        )}
       </div>
     );
   }

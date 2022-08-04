@@ -96,6 +96,9 @@ class App extends Component {
           numberOfEvents={this.state.numberOfEvents}
           updateEvents={this.updateEvents}
         />
+        <div className="pie-chart">
+          <EventGenre events={this.state.events} />
+        </div>
         <ResponsiveContainer height={400}>
           <ScatterChart
             margin={{

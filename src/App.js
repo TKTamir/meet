@@ -91,11 +91,8 @@ class App extends Component {
     return (
       <div className="App">
         <WarningAlert text={this.state.warningText} />
-        <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
-        <NumberOfEvents
-          numberOfEvents={this.state.numberOfEvents}
-          updateEvents={this.updateEvents}
-        />
+        <CitySearch locations={locations} updateEvents={this.updateEvents} />
+        <NumberOfEvents numberOfEvents={numberOfEvents} updateEvents={this.updateEvents} />
         <div className="pie-chart">
           <EventGenre events={this.state.events} />
         </div>

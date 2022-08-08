@@ -1,7 +1,7 @@
 # Meet
 Meet is a Progressive Web App that displays events around the world, the app fetches the event from the Google Calendar API
 The app was designed using a test-driven development (TDD) approach.
-https://tktamir.github.io/meet/
+- https://tktamir.github.io/meet/
 
 ## Tech Tools
 - HTML5

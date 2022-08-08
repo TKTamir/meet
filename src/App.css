@@ -270,6 +270,13 @@ input[type="number"] {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
+  .data-vis-wrapper .recharts-responsive-container {
+    flex-basis: 30%;
+    max-width: 30%;
+    min-width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media all and (max-width: 751px) {
@@ -277,6 +284,12 @@ input[type="number"] {
     grid-gap: 10px;
   }
 
+  .data-vis-wrapper .recharts-responsive-container {
+    flex-basis: 40%;
+    max-width: 40%;
+    min-width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 992px) {

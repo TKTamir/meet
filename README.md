@@ -4,18 +4,18 @@ The app was designed using a test-driven development (TDD) approach.
 https://tktamir.github.io/meet/
 
 ## Tech Tools
--HTML5
--CSS3
--Javascript
--React
--AWS Lambda
--Serveless
--Oauth 2
--Recharts data visualization
--http-server
--Puppeteer
--Atatus
--Github Pages
+- HTML5
+- CSS3
+- Javascript
+- React
+- AWS Lambda
+- Serveless
+- Oauth 2
+- Recharts data visualization
+- http-server
+- Puppeteer
+- Atatus
+- Github Pages
 
 ## Screenshot
 <img width="953" alt="Meet1" src="https://user-images.githubusercontent.com/104828119/183395255-ea4b2278-5c0b-4b09-809d-79e4ba11c6ed.PNG">

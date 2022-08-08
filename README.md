@@ -31,7 +31,7 @@ https://tktamir.github.io/meet/
 ● View a chart showing the number of upcoming events by city.
 
 ## User Stories:
-###FEATURE 1: FILTER EVENTS BY CITY
+### FEATURE 1: FILTER EVENTS BY CITY
 
 Scenario 1: When a user hasn’t searched for a city, show upcoming events from all cities.
 Story1:As a user,
@@ -60,7 +60,7 @@ Then-their city should be changed to that city (i.e., “Berlin, Germany").
 And-the user should receive a list of upcoming events in that city
 
 
-###FEATURE 2: SHOW/HIDE AN EVENT’S DETAILS
+### FEATURE 2: SHOW/HIDE AN EVENT’S DETAILS
 
 Scenario 1: An event element is collapsed by default.
 Story 1: As a user,
@@ -87,7 +87,7 @@ When-The user clicks on the details button again.
 Then- The event details part of the event elemnt is collapsed.
 
 
-###FEATURE 3: SPECIFY NUMBER OF EVENTS
+### FEATURE 3: SPECIFY NUMBER OF EVENTS
 
 Scenario 1: When a user hasn’t specified a number, 32 is the default number.
 Story 1: As a user,
@@ -106,7 +106,7 @@ When-User changes the number of events in the input box.
 Then-The event list elements shows the number of events set by the user.
 
 
-###FEATURE 4: USE THE APP WHEN OFFLINE
+### FEATURE 4: USE THE APP WHEN OFFLINE
 
 Scenario 1: Show cached data when there’s no internet connection.
 Story 1: As a user,
@@ -124,7 +124,7 @@ Given-User has been using the app offline.
 When-User is trying to change a setting.
 Then-User will be presented with an error- “Action unavailable while offline”.
 
-###FEATURE 5: DATA VISUALIZATION
+### FEATURE 5: DATA VISUALIZATION
 Scenario 1: Show a chart with the number of upcoming events in each city.
 Story 1: As a user,
  I should be able to see a chart showing the number of upcoming events in each city

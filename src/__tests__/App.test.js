@@ -1,13 +1,12 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../App';
-import EventList from '../EventList';
-import CitySearch from '../CitySearch';
-import NumberOfEvents from '../NumberOfEvents';
+import EventList from '../components/EventList';
+import CitySearch from '../components/CitySearch';
+import NumberOfEvents from '../components/NumberOfEvents';
 import { mockData } from '../mock-data';
 import { extractLocations, getEvents } from '../api';
 // import { getCalendarEvents } from '../../auth-server/handler';
-
 //Unit testing
 describe('<App /> component', () => {
   let AppWrapper;

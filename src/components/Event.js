@@ -8,10 +8,9 @@ class Event extends Component {
     };
   }
 
-  handleItemToggled() {
-    alert(this.state.showDetails);
+  handleItemToggled = () => {
     this.setState({ showDetails: !this.state.showDetails });
-  }
+  };
 
   render() {
     const { event } = this.props;

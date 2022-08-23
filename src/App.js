@@ -70,7 +70,7 @@ class App extends Component {
       }
 
       this.setState({
-        events: locationEvents.slice(0, eventCount),
+        events: locationEvents.slice(0, this.state.numberOfEvents),
         numberOfEvents: eventCount,
         savedLocation: location,
       });

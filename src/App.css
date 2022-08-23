@@ -86,7 +86,6 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
-  z-index: -1;
 }
 
 .details-btn {

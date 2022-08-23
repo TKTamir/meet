@@ -4,8 +4,9 @@ import './App.css';
 import EventList from './components/EventList';
 import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
+import EventGenre from './components/EventGenre';
 import { extractLocations, getEvents, checkToken, getAccessToken } from './api';
-import { WarningAlert } from './Alert';
+import { WarningAlert } from './components/Alert';
 import {
   ScatterChart,
   Scatter,
@@ -15,7 +16,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
-import EventGenre from './EventGenre';
 
 class App extends Component {
   state = {

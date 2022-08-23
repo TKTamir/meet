@@ -5,6 +5,7 @@ import EventList from './components/EventList';
 import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
 import EventGenre from './components/EventGenre';
+import WelcomeScreen from './components/WelcomeScreen';
 import { extractLocations, getEvents, checkToken, getAccessToken } from './api';
 import { WarningAlert } from './components/Alert';
 import {
@@ -33,8 +34,7 @@ class App extends Component {
     const searchParams = new URLSearchParams(window.location.search);
     const code = searchParams.get('code');
     this.setState({ showWelcomeScreen: !(code || isTokenValid) });
-    // if ((code || isTokenValid) && this.mounted) {
-    if (true) {
+    if ((code || isTokenValid) && this.mounted) {
       getEvents().then((events) => {
         if (this.mounted) {
           this.setState({ events, locations: extractLocations(events) });
@@ -115,12 +115,12 @@ class App extends Component {
           </ScatterChart>
         </ResponsiveContainer>
         <EventList events={this.state.events} />
-        {/* <WelcomeScreen
+        <WelcomeScreen
           showWelcomeScreen={this.state.showWelcomeScreen}
           getAccessToken={() => {
             getAccessToken();
           }}
-        /> */}
+        />
       </div>
     );
   }
